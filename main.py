@@ -51,13 +51,12 @@ while miles_to_km_converter == True:
     calculate_button = Button(text="Calculate", command=miles_to_km)
     calculate_button.grid(column=1, row=2)
 
-    calculate_button = Button(text="Switch", command=switch_converter_False)
-    calculate_button.grid(column=2, row=2)
+    switch_button = Button(text="Switch", command=switch_converter_False)
+    switch_button.grid(column=2, row=2)
 
     window.mainloop()
 
 while miles_to_km_converter == False:
-    clear()
     window.title("Kilometers to Miles Converter")
     window.config(padx=26, pady=20)
 
@@ -79,8 +78,8 @@ while miles_to_km_converter == False:
     calculate_button = Button(text="Calculate", command=km_to_miles)
     calculate_button.grid(column=1, row=2)
 
-    calculate_button = Button(text="Switch", command=switch_converter_True)
-    calculate_button.grid(column=2, row=2)
+    switch_button = Button(text="Switch", command=switch_converter_True)
+    switch_button.grid(column=2, row=2)
 
     window.mainloop()
 
