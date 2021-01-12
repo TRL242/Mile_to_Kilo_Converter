@@ -1,5 +1,5 @@
 from tkinter import *
-from turtle import clear
+
 
 miles_to_km_converter = True
 
@@ -14,22 +14,28 @@ def km_to_miles():
     miles = km/1.609
     miles_result_label.config(text=f"{miles}")
 
-def switch_converter_True():
+def switch():
     global miles_to_km_converter
-    miles_to_km_converter = True
+    #determin true or false
+    if miles_to_km_converter == True:
+        miles_to_km_converter = False
+    else:
+        miles_to_km_converter = True
 
 
-def switch_converter_False():
-    global miles_to_km_converter
-    miles_to_km_converter = False
 
-
-
-window = Tk()
-
+# def switch_converter_True():
+#     global miles_to_km_converter
+#     miles_to_km_converter = True
+#
+#
+# def switch_converter_False():
+#     global miles_to_km_converter
+#     miles_to_km_converter = False
 
 
 while miles_to_km_converter == True:
+    window = Tk()
     window.title("Miles to Kilometers Converter")
     window.config(padx=26, pady=20)
 
@@ -51,12 +57,12 @@ while miles_to_km_converter == True:
     calculate_button = Button(text="Calculate", command=miles_to_km)
     calculate_button.grid(column=1, row=2)
 
-    switch_button = Button(text="Switch", command=switch_converter_False)
+    switch_button = Button(text="Switch", command=switch)
     switch_button.grid(column=2, row=2)
 
-    window.mainloop()
 
-while miles_to_km_converter == False:
+else:
+    window = Tk()
     window.title("Kilometers to Miles Converter")
     window.config(padx=26, pady=20)
 
@@ -78,15 +84,15 @@ while miles_to_km_converter == False:
     calculate_button = Button(text="Calculate", command=km_to_miles)
     calculate_button.grid(column=1, row=2)
 
-    switch_button = Button(text="Switch", command=switch_converter_True)
+    switch_button = Button(text="Switch", command=switch)
     switch_button.grid(column=2, row=2)
 
-    window.mainloop()
 
 
 
 
 
+window.mainloop()
 
 
 
