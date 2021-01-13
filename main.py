@@ -1,6 +1,6 @@
 from tkinter import *
 
-
+global miles_to_km_converter
 miles_to_km_converter = True
 
 
@@ -32,10 +32,12 @@ def switch():
 # def switch_converter_False():
 #     global miles_to_km_converter
 #     miles_to_km_converter = False
+window = Tk()
+
+
 
 
 while miles_to_km_converter == True:
-    window = Tk()
     window.title("Miles to Kilometers Converter")
     window.config(padx=26, pady=20)
 
@@ -61,8 +63,7 @@ while miles_to_km_converter == True:
     switch_button.grid(column=2, row=2)
 
 
-else:
-    window = Tk()
+while miles_to_km_converter == False:
     window.title("Kilometers to Miles Converter")
     window.config(padx=26, pady=20)
 
