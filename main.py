@@ -37,8 +37,6 @@ def switch_km_to_miles():
     calculate_button.config(text="Calculate", command=miles_to_km)
     switch_button.config(text="Switch", command=switch_miles_to_km)
 
-def clear_text(self):
-    self.entry.delete(0, 'end')
 
 #==========================UX=================================#
 window = Tk()
