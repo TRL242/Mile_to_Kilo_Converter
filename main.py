@@ -67,35 +67,6 @@ switch_button = Button(text="Switch", command=switch_miles_to_km)
 switch_button.grid(column=2, row=2)
 
 
-# while miles_to_km_converter == False:
-#     window.title("Kilometers to Miles Converter")
-#     window.config(padx=26, pady=20)
-#
-#     km_input = Entry(width=7)
-#     km_input.grid(column=1, row=0)
-#
-#     km_label = Label(text="Kilometers")
-#     km_label.grid(column=2, row=0)
-#
-#     is_equal_label = Label(text="is equal to")
-#     is_equal_label.grid(column=0, row=1)
-#
-#     miles_result_label = Label(text="0")
-#     miles_result_label.grid(column=1, row=1)
-#
-#     miles_label = Label(text="Miles")
-#     miles_label.grid(column=2, row=1)
-#
-#     calculate_button = Button(text="Calculate", command=km_to_miles)
-#     calculate_button.grid(column=1, row=2)
-#
-#     switch_button = Button(text="Switch", command=switch)
-#     switch_button.grid(column=2, row=2)
-
-
-
-
-
 
 window.mainloop()
 
